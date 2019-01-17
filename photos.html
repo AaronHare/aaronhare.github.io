@@ -1,117 +1,171 @@
 <!DOCTYPE html>
-<script>
-  function click (e) {
-  if (!e)
-    e = window.event;
-  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
-    if (window.opera)
-      window.alert("");
-    return false;
-  }
-}
-if (document.layers)
-  document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = click;
-document.oncontextmenu = click;
-</script>
-<style>
-  img {
-  height: 100%;
-  width: 100%;
-  font-family: "Advent Pro", serif;
-  font-weight: 500;
-  text-decoration: none;
-  pointer-events: none;
-}
-</style>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://aaronhare.github.io/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aaron Hare - Photos</title>
-    <meta name="keywords" content="Aaron Hare Portfolio,Aaron Hare,Aaron Hare's Portfolio, aaron hare, aaron, portfolio,photography,photos,">
-    <meta name="description" content="This is my personal portfolio of my work. I hope you enjoy it!">
+    <link rel="stylesheet" href="https://aaronhare.github.io/css/style.css">
+    <link rel="stylesheet" href="https://aaronhare.github.io/css/photos.css">
+    <script src="https://aaronhare.github.io/scripts/no-right-click.js"></script>
+    <script src="https://aaronhare.github.io/scripts/scroll-indicator.js"></script>
+    <script src="https://aaronhare.github.io/scripts/sidenav.js"></script>
     <link rel="icon" href="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png">
   </head>
-  <!--/head-->
   <body>
-    <div id="wrap">
-        <div id="header">
-          <div id="header-padding">
-            <div id="header-image-padding"><img id="header-image" src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare"></div>
-            <div id="header-seperation-padding-left-one"><div id="header-seperation"></div></div>
-            <div id="header-home-padding"><a id="header-home" href="https://aaronhare.github.io/">Home</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-about-padding"><a id="header-about" href="about.html">About</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-blog-padding"><a id="header-blog" target="_blank" rel="noopener noreferrer" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-photos-padding"><a id="header-photos" href="photos.html">Photos</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-videos-padding"><a id="header-videos" href="videos.html">Videos</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-web-design-padding"><a id="header-web-design" href="web-design.html">Web Design</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-contact-padding"><a id="header-contact" href="contact.html">Contact</a></div>
-          </div>
-          <!--/header-padding-->
-        </div>
-        <!--/header-->
-      <div id="main">
-        <div style="padding-left:10vw;padding-right:10vw;padding-top:1vw;padding-bottom:2vw;">
-          <div style="font-family:Raleway, serif;font-weight:400;color:#000;font-size:3vw;text-align:center;">Photography Albums</div>
-          <div style="text-align:center;padding-top:0;padding-left:24vw;padding-right:24vw;padding-bottom:1.25vw;"><div style="background-color:#939393;height:.2vw;width:100%;"></div></div>
-          <a id="album-2-preview" href="photos/kansas-city-at-night.html">
-            <div id="album-2-preview-text">
-              <div id="album-2-preview-text-br"></div>
-              Kansas City at Night
-              <div id="horizontal-split-padding"><div id="horizontal-split"></div></div>
-              2018
-              <div id="album-2-preview-text-br"></div>
-            </div>
-            <!--/album-2-preview-text-->
-            <div id="album-2-preview-image"><img src="https://farm8.staticflickr.com/7835/45614917415_9ab5e72d58_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page." style="width:100%;object-fit:cover;vertical-align:top;padding-bottom:0%;height:26.91vw;"></div>
-          </a>
-          <!--/album-2-preview-->
-          <div id="main-br-padding"></div>
-          <a id="album-1-preview" href="photos/nikon-d3400-test-photos.html">
-            <div id="album-1-preview-image"><img id="album-1-preview-image-fix" src="https://farm8.staticflickr.com/7900/45562190645_57256255d6_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page." style="height:100%;width:100%;"></div>
-            <div id="album-1-preview-text">
-              <div id="album-1-preview-text-br"></div>
-              Nikon D3400 Test Photos
-              <div id="horizontal-split-padding"><div id="horizontal-split"></div></div>
-              2018
-              <div id="album-1-preview-text-br"></div>
-            </div>
-            <!--/album-1-preview-text-->
-          </a>
-          <!--/album-1-preview-->
-          <div id="main-br-padding"></div>
-          <a id="album-0-preview" href="photos/michigan-scenery-summer-2018.html">
-            <div id="album-0-preview-text">
-              <div id="album-0-preview-text-br"></div>
-              Michigan Scenery
-              <div id="horizontal-split-padding"><div id="horizontal-split"></div></div>
-              Summer 2018
-              <div id="album-0-preview-text-br"></div>
-            </div>
-            <!--/album-0-preview-text-->
-            <div id="album-0-preview-image"><img src="https://farm8.staticflickr.com/4872/45893764594_65e7bd2a99_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page." style="width:100%;object-fit:cover;vertical-align:top;padding-bottom:0%;height:26.91vw;"></div>
-          </a>
-          <!--/album-0-preview-->
-        </div>
-        <!--/main-padding-->
-      </div>
-      <!--/main-->
-      <div id="footer">
-        <div id="footer-padding">
-          Copyright © 2018-2019 Aaron Hare
-        </div>
-        <!--footer-padding-->
-      </div>
-      <!--/footer-->
+    <div id="sidenavbackground" style="height:100%;width:100%;position:fixed;z-index:2;top:0;background-color:rgba(0,0,0,0.75);visibility:hidden;opacity:0;transition:all 0.4s ease;"></div>
+    <div id="sidenav" class="sidenav">
+      <a id="sidenav-close-btn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="sidenav-link-with-hover-1" href="https://aaronhare.github.io">Home</a>
+      <a id="sidenav-link-with-hover-2" href="https://aaronhare.github.io/about.html">About</a>
+      <a id="sidenav-link-with-hover-3" href="https://aaronhare.github.io/my-work.html">My Work</a>
+      <a id="sidenav-link-with-hover-4" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+      <a id="sidenav-link-with-hover-5" href="https://aaronhare.github.io/contact.html">Contact</a>
+      <div style="color:#868686;font-size:.9vw;margin-left:2vw;">Copyright © 2018-2019 Aaron Hare</div>
     </div>
-    <!--/wrap-->
+    <div style="font-family:Raleway,serif;font-weight:500;transform:rotate(-90deg);color:#f9f9f9;position:fixed;z-index:1;font-size:1vw;mix-blend-mode:difference;top:50%;left:-1.45%;cursor:default;">⇽Scroll⇾</div>
+    <div id="header">
+      <div id="logo-header" style="display:inline-block;cursor:default;">
+        <img src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare" style="width:4vw;display:inline-block;position:absolute;top:.55vw;left:1.25%;margin:.5vw;">
+        <div style="display:inline-block;color:#f9f9f9;font-family:Raleway;font-weight:400;font-size:1.5vw;margin:.4vw;margin-left:none;position:absolute;top:.45vw;left:6%;">
+          Aaron Hare's
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:7vw;height:.145vw;">
+          </div>
+          Portfolio
+        </div>
+      </div>
+      <div style="display:inline-block;float:right;magin:.5vw;margin-top:1vw;margin-right:.5vw;">
+        <a id="link-with-hover-1" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:58.5%;" href="https://aaronhare.github.io">Home</a>
+        <a id="link-with-hover-2" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:65.5%;" href="https://aaronhare.github.io/about.html">About</a>
+        <div id="header-dropdown">
+          <a id="link-with-hover-3" class="header-dropbtn" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;cursor:pointer;position:absolute;top:1.75vw;left:72.5%;" href="https://aaronhare.github.io/my-work.html">My Work <div id="down-arrow"></div></a>
+          <div id="header-dropdown-content">
+            <a href="https://aaronhare.github.io/photos.html">Photography</a>
+            <a href="https://aaronhare.github.io/videos.html">Videography</a>
+            <a href="https://aaronhare.github.io/graphic-design.html">Graphic Design</a>
+            <a href="https://aaronhare.github.io/3d-models.html">3D Modeling</a>
+            <a href="https://aaronhare.github.io/web-design.html">Web Design</a>
+            <a href="https://aaronhare.github.io/other-work.html">Other Work</a>
+          </div>
+        </div> 
+        <a id="link-with-hover-4" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:82.75%;" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+        <a id="link-with-hover-5" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:88.5%;" href="https://aaronhare.github.io/contact.html">Contact</a>
+        <span id="openNav" onclick="openNav()">
+          <div style="width:1.5vw;height:1.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;opacity:0;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.7vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:3.2vw;right:1.75%;"></div>
+        </span>
+      </div>
+      <div id="scroll-indicator-container">
+        <div class="scroll-indicator" id="scrollbar"></div>
+      </div> 
+    </div>
+    <div id="parallax-1-photos">
+      <div id="parallax-1-photos-text">
+        Photography
+        <div style="padding-left:15vw;padding-right:15vw;">
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:100%;height:.25vw;"></div>
+        </div>
+        <div id="parallax-1-photos-body-text">
+          I love photography and taking photos. I regularly post my best photos here!
+        </div>
+      </div>
+      <div id="parallax-1-photos-background-image"></div>
+    </div>
+    <div style="cursor:default;">
+      <div style="padding-top:3vw;height:10vw;background-color:#000;color:#f9f9f9;font-family:Raleway,serif;text-align:center;font-size:4.25vw;transform:translateY(0vw)">
+        My Photos
+      </div>
+      <div style="padding-left:38.5vw;padding-right:38.5vw;height:0;">
+        <div style="background-color:#f9f9f9;transform:translateY(-4.75vw);border-radius:2vw;width:100%;height:.5vw;"></div>
+      </div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Kansas City
+        <div></div>
+        at Night
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          This is a collection of photos taken at night in Kansas City, Missouri.
+          <button id="index-button" onclick="location.href='https://aaronhare.github.io/photos/kansas-city-at-night.html'" type="button" style="position:absolute;left:0;bottom:0;">View Album</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/4870/45614918675_22f7437084_b.jpg);background-size:60vw;width:100vw;height:100vw;transform:rotate(-25deg) translate(-7.5vw, .5vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7835/45614917415_9ab5e72d58_b.jpg);background-size:85vw;width:100vw;height:100vw;transform:rotate(-25deg) translate(-14vw, .25vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7808/45614922035_4141b7cd91_b.jpg);background-size:85vw;width:100vw;height:100vw;transform:rotate(-25deg);"></div>
+      </div>
+    </div>
+    <div style="padding-left:1.5vw;background-color:#f9f9f9;">
+      <div style="height:.5vw;background-color:#000;border-radius: 1vw 0 0 1vw;"></div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Nikon D3400
+        <div></div>
+        Test Photos
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          This is a collection of photos I took once I got my Nikon D3400. 
+          <div></div>
+          There is no common theme between any
+          <div></div>
+          of these photos.
+          <button id="index-button" onclick="location.href='https://aaronhare.github.io/photos/nikon-d3400-test-photos.html'" type="button" style="position:absolute;left:0;bottom:0;">View Album</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7865/45562192965_d6eeed4617_b.jpg);background-size:80vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-21vw, -9.6vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/4906/46475270941_c74115ece9_b.jpg);background-size:70vw;width:100vw;height:100vw;transform:rotate(-26.75deg) translate(-15.75vw, -9.875vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/4841/45751812664_755f4c56b0_b.jpg);background-size:60vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-22.5vw, .25vw);"></div>
+      </div>
+    </div>
+    <div style="padding-left:1.5vw;background-color:#f9f9f9;">
+      <div style="height:.5vw;background-color:#000;border-radius: 1vw 0 0 1vw;"></div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Michigan
+        <div></div>
+        Scenery
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          This is a collection of photos I took while on vacation in Michigan over summer 2018.
+          <button id="index-button" onclick="location.href='https://aaronhare.github.io/photos/michigan-scenery-summer-2018.html'" type="button" style="position:absolute;left:0;bottom:0;">View Album</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7888/45893775584_96688e7301_b.jpg);background-size:80vw;width:100vw;height:100vw;transform:rotate(-25deg) translate(-32.5vw, -7vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/4825/45893774374_afa4f53a58_b.jpg);background-size:70vw;width:100vw;height:100vw;transform:rotate(-25deg) translate(-22vw, -10.4vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7826/32743661468_a9b5d2db8d_k.jpg);background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);"></div>
+      </div>
+    </div>
+    <div style="height:5.25vw;background-color:rgba(0,0,0,1);color:#f9f9f9;text-align:center;font-family:Raleway;font-weight:400;font-size:1.6vw;">
+      <div style="padding-top:1.65vw;">
+        Copyright © 2018-2019 Aaron Hare
+      </div>
+    </div>
   </body>
-  <!--/body-->
 </html>
