@@ -1,102 +1,254 @@
 <!DOCTYPE html>
-<script>
-  function click (e) {
-  if (!e)
-    e = window.event;
-  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
-    if (window.opera)
-      window.alert("");
-    return false;
-  }
-}
-if (document.layers)
-  document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = click;
-document.oncontextmenu = click;
-</script>
-<style>
-img {
-  height: 100%;
-  width: 100%;
-  font-family: "Advent Pro", serif;
-  font-weight: 500;
-  text-decoration: none;
-  pointer-events: none;
-}
-</style>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://aaronhare.github.io/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aaron Hare</title>
-    <meta name="keywords" content="Aaron Hare Portfolio,Aaron Hare,Aaron Hare's Portfolio, aaron hare, aaron, portfolio,">
-    <meta name="description" content="This is my personal portfolio of my work. It contains some of my photography, videography, and web design work. I hope you enjoy it!">
+    <link rel="stylesheet" href="https://aaronhare.github.io/css/style.css">
+    <link rel="stylesheet" href="https://aaronhare.github.io/css/contact.css">
+    <script src="https://aaronhare.github.io/scripts/no-right-click.js"></script>
+    <script src="https://aaronhare.github.io/scripts/scroll-indicator.js"></script>
+    <script src="https://aaronhare.github.io/scripts/sidenav.js"></script>
     <link rel="icon" href="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png">
-    <meta name="title" content="Aaron Hare's Portfolio">
-    <meta itemprop="name" content="Aaron Hare's Portfolio">
-    <meta property="og:title" content="Aaron Hare's Portfolio">
   </head>
-  <!--/head-->
   <body>
-    <div id="wrap">
-        <div id="header">
-          <div id="header-padding">
-            <div id="header-image-padding"><img id="header-image" src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare"></div>
-            <div id="header-seperation-padding-left-one"><div id="header-seperation"></div></div>
-            <div id="header-home-padding"><a id="header-home" href="https://aaronhare.github.io/">Home</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-about-padding"><a id="header-about" href="about.html">About</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-blog-padding"><a id="header-blog" target="_blank" rel="noopener noreferrer" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-photos-padding"><a id="header-photos" href="photos.html">Photos</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-videos-padding"><a id="header-videos" href="videos.html">Videos</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-web-design-padding"><a id="header-web-design" href="web-design.html">Web Design</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-contact-padding"><a id="header-contact" href="contact.html">Contact</a></div>
-          </div>
-          <!--/header-padding-->
-        </div>
-        <!--/header-->
-      <div id="main">
-        <div id="main-padding">
-          <a id="main-photos-preview" href="photos.html">
-            <div style="display:none">Aaron Hare's Portfolio</div>
-            <div id="main-photos-preview-image"><img id="main-photos-preview-image-fix" src="https://farm8.staticflickr.com/7900/45562190645_57256255d6_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page."></div>
-            <div id="main-photos-preview-text">
-              <div id="main-photos-preview-text-br"></div>
-              Photography
-              <div id="main-photos-preview-text-br"></div>
-            </div>
-            <!--/main-photos-preview-text-->
-          </a>
-          <!--/main-photos-preview-->
-          <div id="main-br-padding"></div>
-          <a id="main-videos-preview" href="videos.html">
-            <div id="main-videos-preview-text">
-              <div id="main-videos-preview-text-br"></div>
-              Videography
-              <div id="main-videos-preview-text-br"></div>
-            </div>
-            <!--/main-videos-preview-text-->
-            <div id="main-videos-preview-image"><img src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FPlace%20Holder%20small.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page."></div>
-          </a>
-          <!--/main-videos-preview-->
-        </div>
-        <!--/main-padding-->
-      </div>
-      <!--/main-->
-      <div id="footer">
-        <div id="footer-padding">
-          Copyright © 2018-2019 Aaron Hare
-        </div>
-        <!--footer-padding-->
-      </div>
-      <!--/footer-->
+    <div id="sidenavbackground" style="height:100%;width:100%;position:fixed;z-index:2;top:0;background-color:rgba(0,0,0,0.75);visibility:hidden;opacity:0;transition:all 0.4s ease;"></div>
+    <div id="sidenav" class="sidenav">
+      <a id="sidenav-close-btn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="sidenav-link-with-hover-1" href="https://aaronhare.github.io">Home</a>
+      <a id="sidenav-link-with-hover-2" href="https://aaronhare.github.io/about.html">About</a>
+      <a id="sidenav-link-with-hover-3" href="https://aaronhare.github.io/my-work.html">My Work</a>
+      <a id="sidenav-link-with-hover-4" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+      <a id="sidenav-link-with-hover-5" href="https://aaronhare.github.io/contact.html">Contact</a>
+      <div style="color:#868686;font-size:.9vw;margin-left:2vw;">Copyright © 2018-2019 Aaron Hare</div>
     </div>
-    <!--/wrap-->
+    <div style="font-family:Raleway,serif;font-weight:500;transform:rotate(-90deg);color:#f9f9f9;position:fixed;z-index:1;font-size:1vw;mix-blend-mode:difference;top:50%;left:-1.45%;cursor:default;">⇽Scroll⇾</div>
+    <div id="header">
+      <div id="logo-header" style="display:inline-block;cursor:default;">
+        <img src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare" style="width:4vw;display:inline-block;position:absolute;top:.55vw;left:1.25%;margin:.5vw;">
+        <div style="display:inline-block;color:#f9f9f9;font-family:Raleway;font-weight:400;font-size:1.5vw;margin:.4vw;margin-left:none;position:absolute;top:.45vw;left:6%;">
+          Aaron Hare's
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:7vw;height:.145vw;">
+          </div>
+          Portfolio
+        </div>
+      </div>
+      <div style="display:inline-block;float:right;magin:.5vw;margin-top:1vw;margin-right:.5vw;">
+        <a id="link-with-hover-1" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:58.5%;" href="https://aaronhare.github.io">Home</a>
+        <a id="link-with-hover-2" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:65.5%;" href="https://aaronhare.github.io/about.html">About</a>
+        <div id="header-dropdown">
+          <a id="link-with-hover-3" class="header-dropbtn" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;cursor:pointer;position:absolute;top:1.75vw;left:72.5%;" href="https://aaronhare.github.io/my-work.html">My Work <div id="down-arrow"></div></a>
+          <div id="header-dropdown-content">
+            <a href="https://aaronhare.github.io/photos.html">Photography</a>
+            <a href="https://aaronhare.github.io/videos.html">Videography</a>
+            <a href="https://aaronhare.github.io/graphic-design.html">Graphic Design</a>
+            <a href="https://aaronhare.github.io/3d-modeling.html">3D Modeling</a>
+            <a href="https://aaronhare.github.io/web-design.html">Web Design</a>
+            <a href="https://aaronhare.github.io/other-work.html">Other Work</a>
+          </div>
+        </div> 
+        <a id="link-with-hover-4" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:82.75%;" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+        <a id="link-with-hover-5" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:88.5%;" href="https://aaronhare.github.io/contact.html">Contact</a>
+        <span id="openNav" onclick="openNav()">
+          <div style="width:1.5vw;height:1.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;opacity:0;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.7vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:3.2vw;right:1.75%;"></div>
+        </span>
+      </div>
+      <div id="scroll-indicator-container">
+        <div class="scroll-indicator" id="scrollbar"></div>
+      </div> 
+    </div>
+    <div id="parallax-1-index">
+      <div id="parallax-1-index-text">
+        Hi, I'm Aaron Hare
+        <div style="padding-left:8.5vw;padding-right:8.5vw;">
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:100%;height:.25vw;"></div>
+        </div>
+        <div id="parallax-1-index-body-text">I spend most of my free time doing what I love, which is photography, videography, graphic design, web design, 3D modeling, and anything to do with computers.
+        </div>
+      </div>
+      <div id="parallax-1-index-background-image"></div>
+    </div>
+    <div style="cursor:default;">
+      <div style="padding-top:3vw;height:10vw;background-color:#000;color:#f9f9f9;font-family:Raleway,serif;text-align:center;font-size:4.25vw;transform:translateY(0vw)">
+        My Work
+      </div>
+      <div style="padding-left:39.5vw;padding-right:39.5vw;height:0;">
+        <div style="background-color:#f9f9f9;transform:translateY(-4.75vw);border-radius:2vw;width:100%;height:.5vw;"></div>
+      </div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Photography
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          I love photography and taking photos. I regularly post my best photos here!
+          <button id="index-button" onclick="location.href='http://aaronhare.github.io/photos.html'" type="button" style="position:absolute;left:0;bottom:0;">View Albums</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7865/45562192965_d6eeed4617_b.jpg);background-size:80vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-21vw, -9.6vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/4906/46475270941_c74115ece9_b.jpg);background-size:70vw;width:100vw;height:100vw;transform:rotate(-26.75deg) translate(-15.75vw, -9.875vw);"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url(https://farm8.staticflickr.com/7826/32743661468_a9b5d2db8d_k.jpg);background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);"></div>
+      </div>
+    </div>
+    <div style="padding-left:1.5vw;background-color:#f9f9f9;">
+      <div style="height:.5vw;background-color:#000;border-radius: 1vw 0 0 1vw;"></div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Videography
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          I want to get into videography sometime. I will post any new videos I make here!
+          <button id="index-button" onclick="location.href='http://aaronhare.github.io/videos.html'" type="button" style="position:absolute;left:0;bottom:0;">View Videos</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <video autoplay muted loop style="position:fixed;left:0;bottom:0;min-width:100%;min-height:100%;background-color:#000;">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <video autoplay muted loop style="position:fixed;left:0;bottom:0;min-width:100%;min-height:100%;background-color:#f9f9f9;">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <video autoplay muted loop style="position:fixed;left:0;bottom:0;min-width:100%;min-height:100%;background-color:#000;">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div style="padding-left:1.5vw;background-color:#f9f9f9;">
+      <div style="height:.5vw;background-color:#000;border-radius: 1vw 0 0 1vw;"></div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Graphic Design
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          In my freetime I often make designs. Once I create a design I will post it here.
+          <button id="index-button" onclick="location.href='http://aaronhare.github.io/graphic-design.html'" type="button" style="position:absolute;left:0;bottom:0;">View Designs</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url(https://i.imgur.com/b8hf8S9h.png);background-size:30vw;width:100vw;height:100vw;"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url();background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);background-color:#f9f9f9;"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url();background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);background-color:#000;"></div>
+      </div>
+    </div>
+    <div style="padding-left:1.5vw;background-color:#f9f9f9;">
+      <div style="height:.5vw;background-color:#000;border-radius: 1vw 0 0 1vw;"></div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        3D Modeling
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          In my freetime I sometimes create 3D models. If I make any then I will post them here.
+          <button id="index-button" onclick="location.href='http://aaronhare.github.io/3d-models.html'" type="button" style="position:absolute;left:0;bottom:0;">View Models</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url();background-size:30vw;width:100vw;height:100vw;background-color:#000;"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url();background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);background-color:#f9f9f9;"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url();background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);background-color:#000;"></div>
+      </div>
+    </div>
+    <div style="padding-left:1.5vw;background-color:#f9f9f9;">
+      <div style="height:.5vw;background-color:#000;border-radius: 1vw 0 0 1vw;"></div>
+    </div>
+    <div style="width:100%;height:35vw;background-color:#f9f9f9;overflow:hidden;">
+      <div style="width:40vw;height:32vw;overflow:hidden;font-family:Raleway,serif;font-weight:500;font-size:3.75vw;margin:1.5vw;margin-top:1vw;margin-bottom:3vw;position:relative;">
+        Web Design
+        <div style="margin-right:17.25vw;">
+          <div style="background-color:#000;transform:translateY(.25vw);border-radius:2vw;width:100%;height:.25vw;">
+          </div>
+        </div>
+        <div style="font-size:2vw;font-weight:400;margin-top:.5vw; margin-right:17vw;">
+          In my freetime I sometimes create websites. When I create more website designs I will post them here.
+          <button id="index-button" onclick="location.href='http://aaronhare.github.io/web-design.html'" type="button" style="position:absolute;left:0;bottom:0;">View Designs</button>
+        </div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -33vw);overflow:hidden;">
+        <div style="background-image:url();background-size:30vw;width:100vw;height:100vw;background-color:#000;"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -100vw);overflow:hidden;">
+        <div style="background-image:url();background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);background-color:#f9f9f9;"></div>
+      </div>
+      <div style="margin-left:20vw;width:100%;height:60vw;transform:rotate(25deg) translate(-12.5vw, -166vw);overflow:hidden;">
+        <div style="background-image:url();background-size:140vw;width:100vw;height:100vw;transform:rotate(-24deg) translate(-9vw, 1.225vw);background-color:#000;"></div>
+      </div>
+    </div>
+    <div style="cursor:default;">
+      <div style="padding-top:3vw;height:10vw;background-color:#000;color:#f9f9f9;font-family:Raleway,serif;text-align:center;font-size:4.25vw;transform:translateY(0vw)">
+        Contact Me
+      </div>
+      <div style="padding-left:37vw;padding-right:37vw;height:0;">
+        <div style="background-color:#f9f9f9;transform:translateY(-4.75vw);border-radius:2vw;width:100%;height:.5vw;"></div>
+      </div>
+    </div>
+    <div style="background-color:#f9f9f9;">
+      <form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbzr-qIPH-EO_So3sTK3V250SifcBXTUrFl6eNYrFtKdK6DOyp3r/exec">
+        <div class="form-elements">
+          <fieldset class="puregroup">
+            <div style="height:10px"></div>
+            <label for="name">Name: </label>
+            <input id="name" name="name" placeholder="Your name" />
+          </fieldset>
+          <div style="height:.25vw;background-color:#000;margin-left:12.5px;margin-right:12.5px;margin-top:5px;margin-bottom:7.5px;border-radius:2vw;"></div>
+          <fieldset class="pure-group">
+            <label for="message">Your Message: </label>
+            <div style="height:2.5px;"></div>
+            <textarea id="message" name="message" rows="10" placeholder="Questions or comments..."></textarea>
+          </fieldset>
+          <div style="height:.25vw;background-color:#000;margin-left:12.5px;margin-right:12.5px;margin-top:2.5px;margin-bottom:10px;border-radius:2vw;"></div>
+          <fieldset class="pure-group">
+            <label for="email">Your Email Address:</label>
+            <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com"/>
+            <span class="email-invalid" style="display:none">
+            Must be a valid email address</span>
+            <div style="height:5px"></div>
+          </fieldset>
+          <button class="button-success pure-button button-xlarge" id="index-button" style="outline:none;">Submit</button>
+        </div>
+        <div class="thankyou_message" style="display:none;">
+          Thank you for contacting me, I will get back to you as soon as I can!
+        </div>
+        <script data-cfasync="false" type="text/javascript" src="https://aaronhare.github.io/form-submission-handler.js"></script>
+      </form>
+    </div>
+    <div style="height:5.25vw;background-color:rgba(0,0,0,1);color:#f9f9f9;text-align:center;font-family:Raleway;font-weight:400;font-size:1.6vw;">
+      <div style="padding-top:1.65vw;">
+        Copyright © 2018-2019 Aaron Hare
+      </div>
+    </div>
   </body>
-  <!--/body-->
 </html>
