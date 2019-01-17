@@ -366,51 +366,8 @@ button:focus {
   margin-right: .75vw;
 }
 
-/*Index CSS---------------------------------------------------------------------------->*/
-#parallax-1-index { 
-  height: 100%; 
-  transform: scale(1);
-  overflow: hidden;
-  cursor: default;
-}
-
-#parallax-1-index-text {
-  color: #f9f9f9;
-  background-color: rgba(0,0,0, 0.75);
-  font-size: 5vw;
-  font-family: Raleway, serif;
-  font-weight: 500;
-  border: 0vw solid #f9f9f9;
-  position: fixed;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70vw;
-  padding: 1.25vw;
-  text-align: center;
-  z-index: 1;
-}
-
-#parallax-1-index-body-text {
-  margin-top: .5vw;
-  font-size: 2.5vw;
-  font-family: Raleway, serif;
-  font-weight: 500;
-}
-
-#parallax-1-index-background-image {
-  background-image: url("https://farm8.staticflickr.com/4870/45614918675_22f7437084_b.jpg");
-  filter: blur(.2vw);
-  background-color: #000;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: scale(1.03);
-}
-
-#index-button{
+/*Button CSS---------------------------------------------------------------------------->*/
+#button-1{
   transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
   position: relative;
   height: 3vw;
@@ -428,7 +385,7 @@ button:focus {
   cursor: pointer;
 }
 
-#index-button:before{
+#button-1:before{
   opacity:0;
   transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
   position:absolute;
@@ -439,7 +396,7 @@ button:focus {
   z-index:-1;
 }
 
-#index-button:after {
+#button-1:after {
   background: #000;
   bottom: 0;
   left: 0;
@@ -451,11 +408,11 @@ button:focus {
   transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
 }
 
-#index-button:hover{
+#button-1:hover{
   color:#f9f9f9;
   border: 0vw #000 solid;
 }
 
-#index-button:hover:after {
+#button-1:hover:after {
   top: 0;
 }
