@@ -1,68 +1,64 @@
 <!DOCTYPE html>
-<script>
-  function click (e) {
-  if (!e)
-    e = window.event;
-  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
-    if (window.opera)
-      window.alert("");
-    return false;
-  }
-}
-if (document.layers)
-  document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = click;
-document.oncontextmenu = click;
-</script>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://aaronhare.github.io/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aaron Hare - Videos</title>
-    <meta name="keywords" content="Aaron Hare Portfolio,Aaron Hare,Aaron Hare's Portfolio, aaron hare, aaron, portfolio,videography,videos,">
-    <meta name="description" content="This is my personal portfolio of my work. I hope you enjoy it!">
+    <link rel="stylesheet" href="https://aaronhare.github.io/css/style.css">
+    <link rel="stylesheet" href="https://aaronhare.github.io/css/contact.css">
+    <script src="https://aaronhare.github.io/scripts/no-right-click.js"></script>
+    <script src="https://aaronhare.github.io/scripts/scroll-indicator.js"></script>
+    <script src="https://aaronhare.github.io/scripts/sidenav.js"></script>
     <link rel="icon" href="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png">
   </head>
-  <!--/head-->
   <body>
-    <div id="wrap">
-        <div id="header">
-          <div id="header-padding">
-            <div id="header-image-padding"><img id="header-image" src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare"></div>
-            <div id="header-seperation-padding-left-one"><div id="header-seperation"></div></div>
-            <div id="header-home-padding"><a id="header-home" href="https://aaronhare.github.io/">Home</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-about-padding"><a id="header-about" href="about.html">About</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-blog-padding"><a id="header-blog" target="_blank" rel="noopener noreferrer" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-photos-padding"><a id="header-photos" href="photos.html">Photos</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-videos-padding"><a id="header-videos" href="videos.html">Videos</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-web-design-padding"><a id="header-web-design" href="web-design.html">Web Design</a></div>
-            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
-            <div id="header-contact-padding"><a id="header-contact" href="contact.html">Contact</a></div>
-          </div>
-          <!--/header-padding-->
-        </div>
-        <!--/header-->
-      <div id="main">
-        <div id="main-padding" style="font-size:2vw;font-family:Raleway;serif;font-weight:400;">
-	        This page is under construction
-        </div>
-        <!--/main-padding-->
-      </div>
-      <!--/main-->
-      <div id="footer">
-        <div id="footer-padding">
-          Copyright © 2018-2019 Aaron Hare
-        </div>
-        <!--footer-padding-->
-      </div>
-      <!--/footer-->
+    <div id="sidenavbackground" style="height:100%;width:100%;position:fixed;z-index:2;top:0;background-color:rgba(0,0,0,0.75);visibility:hidden;opacity:0;transition:all 0.4s ease;"></div>
+    <div id="sidenav" class="sidenav">
+      <a id="sidenav-close-btn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="sidenav-link-with-hover-1" href="https://aaronhare.github.io">Home</a>
+      <a id="sidenav-link-with-hover-2" href="https://aaronhare.github.io/about.html">About</a>
+      <a id="sidenav-link-with-hover-3" href="https://aaronhare.github.io/my-work.html">My Work</a>
+      <a id="sidenav-link-with-hover-4" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+      <a id="sidenav-link-with-hover-5" href="https://aaronhare.github.io/contact.html">Contact</a>
+      <div style="color:#868686;font-size:.9vw;margin-left:2vw;">Copyright © 2018-2019 Aaron Hare</div>
     </div>
-    <!--/wrap-->
+    <div style="font-family:Raleway,serif;font-weight:500;transform:rotate(-90deg);color:#f9f9f9;position:fixed;z-index:1;font-size:1vw;mix-blend-mode:difference;top:50%;left:-1.45%;cursor:default;">⇽Scroll⇾</div>
+    <div id="header">
+      <div id="logo-header" style="display:inline-block;cursor:default;">
+        <img src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare" style="width:4vw;display:inline-block;position:absolute;top:.55vw;left:1.25%;margin:.5vw;">
+        <div style="display:inline-block;color:#f9f9f9;font-family:Raleway;font-weight:400;font-size:1.5vw;margin:.4vw;margin-left:none;position:absolute;top:.45vw;left:6%;">
+          Aaron Hare's
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:7vw;height:.145vw;">
+          </div>
+          Portfolio
+        </div>
+      </div>
+      <div style="display:inline-block;float:right;magin:.5vw;margin-top:1vw;margin-right:.5vw;">
+        <a id="link-with-hover-1" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:58.5%;" href="https://aaronhare.github.io">Home</a>
+        <a id="link-with-hover-2" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:65.5%;" href="https://aaronhare.github.io/about.html">About</a>
+        <div id="header-dropdown">
+          <a id="link-with-hover-3" class="header-dropbtn" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;cursor:pointer;position:absolute;top:1.75vw;left:72.5%;" href="https://aaronhare.github.io/my-work.html">My Work <div id="down-arrow"></div></a>
+          <div id="header-dropdown-content">
+            <a href="https://aaronhare.github.io/photos.html">Photography</a>
+            <a href="https://aaronhare.github.io/videos.html">Videography</a>
+            <a href="https://aaronhare.github.io/graphic-design.html">Graphic Design</a>
+            <a href="https://aaronhare.github.io/3d-modeling.html">3D Modeling</a>
+            <a href="https://aaronhare.github.io/web-design.html">Web Design</a>
+            <a href="https://aaronhare.github.io/other-work.html">Other Work</a>
+          </div>
+        </div> 
+        <a id="link-with-hover-4" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:82.75%;" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+        <a id="link-with-hover-5" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:88.5%;" href="https://aaronhare.github.io/contact.html">Contact</a>
+        <span id="openNav" onclick="openNav()">
+          <div style="width:1.5vw;height:1.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;opacity:0;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.7vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:3.2vw;right:1.75%;"></div>
+        </span>
+      </div>
+      <div id="scroll-indicator-container">
+        <div class="scroll-indicator" id="scrollbar"></div>
+      </div> 
+    </div>
   </body>
-  <!--/body-->
 </html>
