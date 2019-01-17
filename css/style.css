@@ -205,8 +205,8 @@ button:focus {
   width: 8.75vw;
 }
 
-#header-dropdown:hover {
-  padding-bottom: 5vw;
+.header-dropbtn:hover {
+  height: 10vw;
 }
 
 #down-arrow {
