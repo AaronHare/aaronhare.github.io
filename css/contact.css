@@ -1,0 +1,51 @@
+.gform {
+  width: 50vw;
+  text-align: center;
+  margin-left: 25%;
+  transform: translateY(2vw);
+  margin-bottom: 4vw;
+}
+
+.form-elemnts {
+  border: none;
+}
+
+.puregroup {
+  border: none;
+}
+
+.pure-group {
+  border: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-xlarge {
+  font-size: 1vw;
+}
+
+#name, #email {
+  width: 50%;
+}
+
+.thankyou_message {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+label {
+  font-family: "Raleway", serif;
+}
