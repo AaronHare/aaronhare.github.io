@@ -1,0 +1,40 @@
+#parallax-1-contact { 
+  height: 100%; 
+  transform: scale(1);
+  overflow: hidden;
+  cursor: default;
+}
+
+#parallax-1-contact-text {
+  color: #f9f9f9;
+  background-color: rgba(0,0,0, 0.75);
+  font-size: 5vw;
+  font-family: Raleway, serif;
+  font-weight: 500;
+  border: 0vw solid #f9f9f9;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  padding: 1.25vw;
+  text-align: center;
+  z-index: 1;
+}
+
+#parallax-1-contact-body-text {
+  margin-top: .5vw;
+  font-size: 2.5vw;
+  font-family: Raleway, serif;
+  font-weight: 500;
+}
+
+#parallax-1-contact-background-image {
+  background-image: url("https://aaronhare.github.io/images/Background%20Blue.png");
+  background-color: #1A66F7;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
