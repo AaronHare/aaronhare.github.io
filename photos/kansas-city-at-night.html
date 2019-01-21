@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aaron Hare - Kansas City at Night</title>
+    <link rel="stylesheet" href="https://aaronhare.com/css/style.css">
+    <link rel="stylesheet" href="https://aaronhare.com/photos/css/kansas-city-at-night.css">
+    <link rel="stylesheet" type="text/css" href="https://aaronhare.com/photos/css/lightbox.min.css">
+    <script src="https://aaronhare.com/scripts/no-right-click.js"></script>
+    <script src="https://aaronhare.com/scripts/scroll-indicator.js"></script>
+    <script src="https://aaronhare.com/scripts/sidenav.js"></script>
+    <script src="https://aaronhare.com/photos/css/lightbox-plus-jquery.min.js"></script>
+    <link rel="icon" href="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png">
+  </head>
+  <body>
+    <div id="sidenavbackground" style="height:100%;width:100%;position:fixed;z-index:2;top:0;background-color:rgba(0,0,0,0.75);visibility:hidden;opacity:0;transition:all 0.4s ease;"></div>
+    <div id="sidenav" class="sidenav">
+      <a id="sidenav-close-btn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="sidenav-link-with-hover-1" href="https://aaronhare.com">Home</a>
+      <a id="sidenav-link-with-hover-2" href="https://aaronhare.com/about.html">About</a>
+      <a id="sidenav-link-with-hover-3" href="https://aaronhare.com/my-work.html">My Work</a>
+      <a id="sidenav-link-with-hover-4" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+      <a id="sidenav-link-with-hover-5" href="https://aaronhare.com/contact.html">Contact</a>
+      <div style="color:#868686;font-size:.9vw;margin-left:2vw;">Copyright © 2018-2019 Aaron Hare</div>
+    </div>
+    <div style="font-family:Raleway,serif;font-weight:500;transform:rotate(-90deg);color:#f9f9f9;position:fixed;z-index:1;font-size:1vw;mix-blend-mode:difference;top:50%;left:-1.45%;cursor:default;">⇽Scroll⇾</div>
+    <div id="header">
+      <div id="logo-header" style="display:inline-block;cursor:default;">
+        <img src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare" style="width:4vw;display:inline-block;position:absolute;top:.55vw;left:1.25%;margin:.5vw;">
+        <div style="display:inline-block;color:#f9f9f9;font-family:Raleway;font-weight:400;font-size:1.5vw;margin:.4vw;margin-left:none;position:absolute;top:.45vw;left:6%;">
+          Aaron Hare's
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:7vw;height:.145vw;">
+          </div>
+          Portfolio
+        </div>
+      </div>
+      <div style="display:inline-block;float:right;magin:.5vw;margin-top:1vw;margin-right:.5vw;">
+        <a id="link-with-hover-1" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:58.5%;" href="https://aaronhare.com">Home</a>
+        <a id="link-with-hover-2" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:65.5%;" href="https://aaronhare.com/about.html">About</a>
+        <div id="header-dropdown">
+          <a id="link-with-hover-3" class="header-dropbtn" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;cursor:pointer;position:absolute;top:1.75vw;left:72.5%;" href="https://aaronhare.com/my-work.html">My Work <div id="down-arrow"></div></a>
+          <div id="header-dropdown-content">
+            <a href="https://aaronhare.com/photos.html">Photography</a>
+            <a href="https://aaronhare.com/videos.html">Videography</a>
+            <a href="https://aaronhare.com/graphic-design.html">Graphic Design</a>
+            <a href="https://aaronhare.com/3d-models.html">3D Modeling</a>
+            <a href="https://aaronhare.com/web-design.html">Web Design</a>
+            <a href="https://aaronhare.com/other-work.html">Other Work</a>
+          </div>
+        </div> 
+        <a id="link-with-hover-4" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:82.75%;" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+        <a id="link-with-hover-5" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:88.5%;" href="https://aaronhare.com/contact.html">Contact</a>
+        <span id="openNav" onclick="openNav()">
+          <div style="width:1.5vw;height:1.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;opacity:0;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.7vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:3.2vw;right:1.75%;"></div>
+        </span>
+      </div>
+      <div id="scroll-indicator-container">
+        <div class="scroll-indicator" id="scrollbar"></div>
+      </div> 
+    </div>
+    <div id="parallax-1">
+      <div id="parallax-1-text">
+        Kansas City at Night
+        <div style="padding-left:6.5vw;padding-right:6.5vw;">
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:100%;height:.25vw;"></div>
+        </div>
+        <div id="parallax-1-body-text">
+          This is a collection of photos taken at night in Kansas City, Missouri.
+        </div>
+      </div>
+      <div id="parallax-1-background-image"></div>
+    </div>
+    <div id="gallery">
+      <a href="https://farm8.staticflickr.com/4859/45614917565_dc2cd75595_o.jpg" data-lightbox="gallery" data-title="DSC_0022"><img src="https://farm8.staticflickr.com/4859/45614917565_403c75bb08_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7811/45614919215_3ccf064dbc_o.jpg" data-lightbox="gallery" data-title="DSC_0023"><img src="https://farm8.staticflickr.com/7811/45614919215_05caa383d8_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7835/45614917415_2cdfc9a277_o.jpg" data-lightbox="gallery" data-title="DSC_0024"><img src="https://farm8.staticflickr.com/7835/45614917415_9ab5e72d58_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7832/45804692204_1bb6d20001_o.jpg" data-lightbox="gallery" data-title="DSC_0031"><img src="https://farm8.staticflickr.com/7832/45804692204_608cf397f2_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4910/32655137998_de2ac8c6f6_o.jpg" data-lightbox="gallery" data-title="DSC_0034"><img src="https://farm8.staticflickr.com/4910/32655137998_177f1ae573_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7811/45804691854_749290847a_o.jpg" data-lightbox="gallery" data-title="DSC_0037"><img src="https://farm8.staticflickr.com/7811/45804691854_f3ee532e19_z.jpg" style="height:10vw;width:15vw;"></a>        <a href="https://farm8.staticflickr.com/4808/32655137688_58d642964c_o.jpg" data-lightbox="gallery" data-title="DSC_0038"><img src="https://farm8.staticflickr.com/4808/32655137688_d1ce9cebe8_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4904/45614918645_501b8fd01a_o.jpg" data-lightbox="gallery" data-title="DSC_0039"><img src="https://farm8.staticflickr.com/4904/45614918645_3960dba129_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4870/45614918675_e9ec895e0e_o.jpg" data-lightbox="gallery" data-title="DSC_0042"><img src="https://farm8.staticflickr.com/4870/45614918675_22f7437084_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4869/45804691624_2e83bf4a81_o.jpg" data-lightbox="gallery" data-title="DSC_0043"><img src="https://farm8.staticflickr.com/4869/45804691624_06a6edf66a_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7822/32655137318_4da147f981_o.jpg" data-lightbox="gallery" data-title="DSC_0045"><img src="https://farm8.staticflickr.com/7822/32655137318_7bdd147b87_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7818/45804691234_00f5bb87ec_o.jpg" data-lightbox="gallery" data-title="DSC_0052"><img src="https://farm8.staticflickr.com/7818/45804691234_cbf8feb4e2_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7837/46476340852_8ba1ba7e19_o.jpg" data-lightbox="gallery" data-title="DSC_0056"><img src="https://farm8.staticflickr.com/7837/46476340852_1ba0c4c2c8_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4891/45614923295_de212c7259_o.jpg" data-lightbox="gallery" data-title="DSC_0058"><img src="https://farm8.staticflickr.com/4891/45614923295_a66aed2821_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4862/45614923175_de212c7259_o.jpg" data-lightbox="gallery" data-title="DSC_0062"><img src="https://farm8.staticflickr.com/4862/45614923175_a66aed2821_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4864/32655143338_fef9845d20_o.jpg" data-lightbox="gallery" data-title="DSC_0063"><img src="https://farm8.staticflickr.com/4864/32655143338_131e576d23_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7812/45804696984_acb1ed7b82_o.jpg" data-lightbox="gallery" data-title="DSC_0065"><img src="https://farm8.staticflickr.com/7812/45804696984_c29ce3d519_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7893/45614918175_1a6b3779b4_o.jpg" data-lightbox="gallery" data-title="DSC_0066"><img src="https://farm8.staticflickr.com/7893/45614918175_e34dbeb285_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7895/45614922725_5fb190c621_o.jpg" data-lightbox="gallery" data-title="DSC_0069"><img src="https://farm8.staticflickr.com/7895/45614922725_fc992193fa_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4882/32655143088_4058f3c486_o.jpg" data-lightbox="gallery" data-title="DSC_0070"><img src="https://farm8.staticflickr.com/4882/32655143088_13d197166d_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4897/45804696654_7373227252_o.jpg" data-lightbox="gallery" data-title="DSC_0071"><img src="https://farm8.staticflickr.com/4897/45804696654_2c73652e47_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7883/45614922375_45ea6f83ba_o.jpg" data-lightbox="gallery" data-title="DSC_0073"><img src="https://farm8.staticflickr.com/7883/45614922375_311f66bede_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7808/45614922035_71db99248b_o.jpg" data-lightbox="gallery" data-title="DSC_0078"><img src="https://farm8.staticflickr.com/7808/45614922035_4141b7cd91_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7865/32655142458_814a70fdec_o.jpg" data-lightbox="gallery" data-title="DSC_0079"><img src="https://farm8.staticflickr.com/7865/32655142458_fee73b1ae4_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7869/45804690954_ce9c3338f1_o.jpg" data-lightbox="gallery" data-title="DSC_0081"><img src="https://farm8.staticflickr.com/7869/45804690954_6ff37034db_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4817/45804696284_d7c674e4e3_o.jpg" data-lightbox="gallery" data-title="DSC_0084"><img src="https://farm8.staticflickr.com/4817/45804696284_2f9ccd5548_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7915/45614917935_b0901e589c_o.jpg" data-lightbox="gallery" data-title="DSC_0086"><img src="https://farm8.staticflickr.com/7915/45614917935_af23289431_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7827/32655142018_626e20c8c3_o.jpg" data-lightbox="gallery" data-title="DSC_0090"><img src="https://farm8.staticflickr.com/7827/32655142018_113d261ef1_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7814/45804696024_d56d53b011_o.jpg" data-lightbox="gallery" data-title="DSC_0098"><img src="https://farm8.staticflickr.com/7814/45804696024_0f476b976a_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4829/45614921725_6b8b65bf2d_o.jpg" data-lightbox="gallery" data-title="DSC_0099"><img src="https://farm8.staticflickr.com/4829/45614921725_28c15bdd9a_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4816/45614921615_a6dfe11850_o.jpg" data-lightbox="gallery" data-title="DSC_0100"><img src="https://farm8.staticflickr.com/4816/45614921615_a718118afc_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7816/45804695584_cbd5aec485_o.jpg" data-lightbox="gallery" data-title="DSC_0107"><img src="https://farm8.staticflickr.com/7816/45804695584_7511d7d25d_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4904/32655141528_2ff982cb7a_o.jpg" data-lightbox="gallery" data-title="DSC_0123"><img src="https://farm8.staticflickr.com/4904/32655141528_2a5baebf3c_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4814/45614921065_0de0117003_o.jpg" data-lightbox="gallery" data-title="DSC_0127"><img src="https://farm8.staticflickr.com/4814/45614921065_dcc040a088_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4889/45804695274_ca24c189f1_o.jpg" data-lightbox="gallery" data-title="DSC_0129"><img src="https://farm8.staticflickr.com/4889/45804695274_9c5954615b_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7921/32655141038_5b67ec7b15_o.jpg" data-lightbox="gallery" data-title="DSC_0130"><img src="https://farm8.staticflickr.com/7921/32655141038_c8a09d1b72_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4912/45614920915_7c188d333a_o.jpg" data-lightbox="gallery" data-title="DSC_0131"><img src="https://farm8.staticflickr.com/4912/45614920915_8017bb8b94_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7813/45614920835_af92d83d53_o.jpg" data-lightbox="gallery" data-title="DSC_0132"><img src="https://farm8.staticflickr.com/7813/45614920835_77defb46d3_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7844/32655140378_49c1f0634d_o.jpg" data-lightbox="gallery" data-title="DSC_0135"><img src="https://farm8.staticflickr.com/7844/32655140378_ae08a96302_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/4879/45804694234_b24c92184e_o.jpg" data-lightbox="gallery" data-title="DSC_0136"><img src="https://farm8.staticflickr.com/4879/45804694234_4f071dbde1_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4864/32655136568_930f2f3d99_o.jpg" data-lightbox="gallery" data-title="DSC_0137"><img src="https://farm8.staticflickr.com/4864/32655136568_0237623206_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4852/45614917795_e11d4067ce_o.jpg" data-lightbox="gallery" data-title="DSC_0140"><img src="https://farm8.staticflickr.com/4852/45614917795_18c4072999_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7815/45614920495_4c9d149dc6_o.jpg" data-lightbox="gallery" data-title="DSC_0143"><img src="https://farm8.staticflickr.com/7815/45614920495_e3b49faf9c_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4826/45614920385_cab92cb26e_o.jpg" data-lightbox="gallery" data-title="DSC_0144"><img src="https://farm8.staticflickr.com/4826/45614920385_68cbf033ca_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7864/45804693864_b25bfbcecd_o.jpg" data-lightbox="gallery" data-title="DSC_0145"><img src="https://farm8.staticflickr.com/7864/45804693864_e93c5d3dda_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4900/46476341102_f56ffb4f68_o.jpg" data-lightbox="gallery" data-title="DSC_0147"><img src="https://farm8.staticflickr.com/4900/46476341102_0b7aa20e35_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7878/32655139888_385ea20096_o.jpg" data-lightbox="gallery" data-title="DSC_0149"><img src="https://farm8.staticflickr.com/7878/32655139888_001817c54f_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7872/45804693664_87b59e7d9b_o.jpg" data-lightbox="gallery" data-title="DSC_0151"><img src="https://farm8.staticflickr.com/7872/45804693664_4258e7638e_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4821/32655139648_9c4a04abca_o.jpg" data-lightbox="gallery" data-title="DSC_0153"><img src="https://farm8.staticflickr.com/4821/32655139648_5a421186c0_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4909/45614919925_b0b8ce6aa1_o.jpg" data-lightbox="gallery" data-title="DSC_0154"><img src="https://farm8.staticflickr.com/4909/45614919925_0584ff81ee_z.jpg" style="height:10vw;width:15vw;"></a>
+      <a href="https://farm8.staticflickr.com/7880/45614919835_7603e91bc7_o.jpg" data-lightbox="gallery" data-title="DSC_0156"><img src="https://farm8.staticflickr.com/7880/45614919835_2243fd1551_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4819/32655139258_4fa8e4fd92_o.jpg" data-lightbox="gallery" data-title="DSC_0157"><img src="https://farm8.staticflickr.com/4819/32655139258_e697a685b4_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4876/45804693234_6e37ec7aed_o.jpg" data-lightbox="gallery" data-title="DSC_0160"><img src="https://farm8.staticflickr.com/4876/45804693234_a43649d4fc_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7831/32655136248_c338770cdc_o.jpg" data-lightbox="gallery" data-title="DSC_0162"><img src="https://farm8.staticflickr.com/7831/32655136248_f48c203a60_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7891/32655138718_7b8a607990_o.jpg" data-lightbox="gallery" data-title="DSC_0163"><img src="https://farm8.staticflickr.com/7891/32655138718_e35cecb12d_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/4837/45614919335_0d240356de_o.jpg" data-lightbox="gallery" data-title="DSC_0176"><img src="https://farm8.staticflickr.com/4837/45614919335_db31bf3359_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7903/45804692624_da07da51c3_o.jpg" data-lightbox="gallery" data-title="DSC_0178"><img src="https://farm8.staticflickr.com/7903/45804692624_208631d9cf_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://farm8.staticflickr.com/7911/32655138558_d9d25c4606_o.jpg" data-lightbox="gallery" data-title="DSC_0179"><img src="https://farm8.staticflickr.com/7911/32655138558_af62d14547_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+    </div>
+    <div style="height:5.25vw;background-color:rgba(0,0,0,1);color:#f9f9f9;text-align:center;font-family:Raleway;font-weight:400;font-size:1.6vw;">
+      <div style="padding-top:1.65vw;">
+        Copyright © 2018-2019 Aaron Hare
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--Lightbox created by by Lokesh Dhakar. Homepage link: https://lokeshdhakar.com/ License:
+The MIT License (MIT)
+Copyright (c) 2015 Lokesh Dhakar
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
