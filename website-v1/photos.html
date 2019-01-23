@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<script>
+  function click (e) {
+  if (!e)
+    e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+    if (window.opera)
+      window.alert("");
+    return false;
+  }
+}
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = click;
+document.oncontextmenu = click;
+</script>
+<style>
+  img {
+  height: 100%;
+  width: 100%;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  text-decoration: none;
+  pointer-events: none;
+}
+</style>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Aaron Hare - Photos</title>
+    <meta name="google-site-verification" content="EiLhpVxWP7NjkD67sZwpvcWpk7nQT3p_LUjPDnr6Zyw" />
+    <meta name="keywords" content="Aaron Hare Portfolio,Aaron Hare,Aaron Hare's Portfolio, aaron hare, aaron, portfolio,photography,photos,">
+    <meta name="description" content="This is my personal portfolio of my work. I hope you enjoy it!">
+    <link rel="icon" href="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png">
+  </head>
+  <!--/head-->
+  <body>
+    <div id="wrap">
+        <div id="header">
+          <div id="header-padding">
+            <div id="header-image-padding"><img id="header-image" src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare"></div>
+            <div id="header-seperation-padding-left-one"><div id="header-seperation"></div></div>
+            <div id="header-home-padding"><a id="header-home" href="https://aaronhare.glitch.me/">Home</a></div>
+            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
+            <div id="header-about-padding"><a id="header-about" href="about.html">About</a></div>
+            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
+            <div id="header-blog-padding"><a id="header-blog" target="_blank" rel="noopener noreferrer" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a></div>
+            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
+            <div id="header-photos-padding"><a id="header-photos" href="photos.html">Photos</a></div>
+            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
+            <div id="header-videos-padding"><a id="header-videos" href="videos.html">Videos</a></div>
+            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
+            <div id="header-web-design-padding"><a id="header-web-design" href="web-design.html">Web Design</a></div>
+            <div id="header-seperation-padding-left"><div id="header-seperation"></div></div>
+            <div id="header-contact-padding"><a id="header-contact" href="contact.html">Contact</a></div>
+          </div>
+          <!--/header-padding-->
+        </div>
+        <!--/header-->
+      <div id="main">
+        <div style="padding-left:10vw;padding-right:10vw;padding-top:1vw;padding-bottom:2vw;">
+          <div style="font-family:Raleway, serif;font-weight:400;color:#000;font-size:3vw;text-align:center;">Photography Albums</div>
+          <div style="text-align:center;padding-top:0;padding-left:24vw;padding-right:24vw;padding-bottom:1.25vw;"><div style="background-color:#939393;height:.2vw;width:100%;"></div></div>
+          <a id="album-2-preview" href="kansas-city-at-night.html">
+            <div id="album-2-preview-text">
+              <div id="album-2-preview-text-br"></div>
+              Kansas City at Night
+              <div id="horizontal-split-padding"><div id="horizontal-split"></div></div>
+              2018
+              <div id="album-2-preview-text-br"></div>
+            </div>
+            <!--/album-2-preview-text-->
+            <div id="album-2-preview-image"><img src="https://farm8.staticflickr.com/7835/45614917415_9ab5e72d58_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page." style="width:100%;object-fit:cover;vertical-align:top;padding-bottom:0%;height:26.91vw;"></div>
+          </a>
+          <!--/album-2-preview-->
+          <div id="main-br-padding"></div>
+          <a id="album-1-preview" href="nikon-d3400-test-photos.html">
+            <div id="album-1-preview-image"><img id="album-1-preview-image-fix" src="https://farm8.staticflickr.com/7900/45562190645_57256255d6_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page." style="height:100%;width:100%;"></div>
+            <div id="album-1-preview-text">
+              <div id="album-1-preview-text-br"></div>
+              Nikon D3400 Test Photos
+              <div id="horizontal-split-padding"><div id="horizontal-split"></div></div>
+              2018
+              <div id="album-1-preview-text-br"></div>
+            </div>
+            <!--/album-1-preview-text-->
+          </a>
+          <!--/album-1-preview-->
+          <div id="main-br-padding"></div>
+          <a id="album-0-preview" href="michigan-scenery-summer-2018.html">
+            <div id="album-0-preview-text">
+              <div id="album-0-preview-text-br"></div>
+              Michigan Scenery
+              <div id="horizontal-split-padding"><div id="horizontal-split"></div></div>
+              Summer 2018
+              <div id="album-0-preview-text-br"></div>
+            </div>
+            <!--/album-0-preview-text-->
+            <div id="album-0-preview-image"><img src="https://farm8.staticflickr.com/4872/45893764594_65e7bd2a99_b.jpg" alt="This image hasn't loaded? Try refreshing this page again! If you experience this problem again please contact me through the contact page." style="width:100%;object-fit:cover;vertical-align:top;padding-bottom:0%;height:26.91vw;"></div>
+          </a>
+          <!--/album-0-preview-->
+        </div>
+        <!--/main-padding-->
+      </div>
+      <!--/main-->
+      <div id="footer">
+        <div id="footer-padding">
+          Copyright © 2018-2019 Aaron Hare
+        </div>
+        <!--footer-padding-->
+      </div>
+      <!--/footer-->
+    </div>
+    <!--/wrap-->
+  </body>
+  <!--/body-->
+</html>
