@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro: 500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
+/* CSS Document */
+/*Website moved from Mozilla Thimble to Glitch on December 12, 2018*/
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+/*miscellaneous-css*/
+body::-webkit-scrollbar { 
+  display: none !important; 
+}
+/*end-miscellaneous-css*/
+
+#wrap {
+  margin: 0;
+  background-color: #e8e8e8;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*header-css*/
+#header {
+  height: 10vw;
+  padding-top: 0vw;
+  background-color: #b1b1b1;
+  font-family: "Advent Pro", serif;
+  border-bottom: .2vw solid #939393;
+  align-items: center;
+  padding-bottom: .5vw;
+  font-size: 2.5vw;
+}
+
+#header-padding {
+  text-align: left;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+}
+
+#header-image {
+  display: inline-block;
+  height: 8.5vw;
+  width: 10.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-right: .25vw;
+  pointer-events: none;
+}
+
+#header-image-padding {
+  display: inline-block;
+  padding-bottom: 0vw;
+  padding-left: 1.25vw;
+}
+
+#header-home {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-home:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-home-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-about {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-about:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-about-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-contact {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-contact:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-contact-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-photos {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-photos:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-photos-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-videos {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-videos:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-videos-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-web-design {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-web-design:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-web-design-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-blog {
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#header-blog:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: .15vw .15vw #000000;
+}
+
+#header-blog-padding {
+  display: inline-block;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding-bottom: 4.5vw;
+  padding-right: 1vw;
+}
+
+#header-seperation-padding-left {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2.1vw;
+  padding-right: 1vw;
+}
+
+#header-seperation-padding-left-one {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2.1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+#header-seperation {
+  height: 6vw;
+  width: .3vw;
+  display: inline-flex;
+  background-color: #939393;
+}
+/*end-header-css*/
+
+/*main-css*/
+#main {
+  float: left;
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #000000;
+  flex: 1;
+}
+
+#main-padding {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+/*end-main-css*/
+
+/*footer-css*/
+#footer {
+  width: 100%;
+  clear: both;
+  background-color: #b1b1b1;
+  font-family: "Advent Pro", serif;
+  font-weight: 500;
+  border-top: .2vw solid #939393;
+  font-size: 1vw;
+  height: 2.75vw;
+  text-align: center;
+}
+
+#footer-padding {
+  padding-top: .5vw;
+  padding-left: .5vw;
+  padding-bottom: .5vw;
+  font-size: 1.25vw;
+}
+/*end-footer-css*/
+
+/*contact-main-css*/
+#contact-link {
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+#contact-link:hover {
+  color: #3385ff;
+  transition: all 0.5s ease;
+}
+
+#contact-information-heading {
+  font-size: 2vw;
+  font-family: "Raleway", serif;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 1vw;
+  padding-bottom: .25vw;
+}
+
+#main-padding-contact {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.gform {
+  background-color: #b1b1b1;
+  border: .2vw solid #939393;
+}
+
+.form-elemnts {
+  border: none;
+}
+
+.puregroup {
+  border: none;
+}
+
+.pure-group {
+  border: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-xlarge {
+  font-size: 1vw;
+}
+
+button {
+  float: right;
+  padding-right: .5vw;
+}
+
+#name, #email {
+  width: 50%;
+}
+
+.thankyou_message {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+label {
+  font-family: "Raleway", serif;
+}
+
+#submit-button-style {
+  display:inline-block;
+  padding:0.7em 1.4em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.15em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  text-transform:uppercase;
+  font-weight:400;
+  color: black;
+  background-color:#b1b1b1;
+  box-shadow:inset 0 -0.6em 0 -0.35em #939393;
+  text-align:center;
+  position:relative;
+  border-style: none;
+  transition: all 0.2s ease;
+  margin:.75vw auto;
+}
+
+#submit-button-style:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#submit-button-style:active {
+  top:0.1em;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+}
+
+@media all and (max-width:30em){
+ #submit-button-style {
+   display:block;
+    margin:0em auto;
+  }
+}
+/*end-contact-main-css*/
+
+/*home-main-css*/
+#main-photos-preview {
+  font-family: "Advent Pro", serif;
+  display: inline-flex;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  border: .2vw solid #939393;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#main-photos-preview:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#main-photos-preview:hover > #main-photos-preview-image {
+  -webkit-filter: brightness(65%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-photos-preview-image {
+  width: 50%;
+  -webkit-filter: brightness(100%);
+  transition: all 0.5s ease;
+}
+
+#main-photos-preview-image-fix {
+  height: 99.95%
+}
+
+#main-photos-preview-text {
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+  border-left: .1vw dashed #939393;
+}
+
+#horizontal-split {
+  width: 100%;
+  background-color: #939393;
+  height: .15vw;
+}
+
+#horizontal-split-padding {
+  padding-left: 30%;
+  padding-right: 30%;
+  height: 0;
+}
+
+#main-photos-preview-text-br {
+  height: 43.4%;
+}
+
+#main-videos-preview {
+  font-family: "Advent Pro", serif;
+  display: inline-flex;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  border: .2vw solid #939393;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#main-videos-preview:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#main-videos-preview:hover > #main-videos-preview-image {
+  -webkit-filter: brightness(65%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-videos-preview-image {
+  width: 50%;
+  -webkit-filter: brightness(100%);
+  transition: all 0.5s ease;
+}
+
+#main-videos-preview-text {
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+  border-right: .1vw dashed #939393;
+}
+
+#main-videos-preview-text-br {
+  height: 42.5%;
+}
+
+#main-br-padding {
+  height: 2vw;
+  width: 100%;
+}
+/*end-home-main-css*/
+
+/*main-album-preview*/
+#main-album-preview {
+  font-family: "Advent Pro", serif;
+  display: inline-flex;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  border: .2vw solid #939393;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#main-album-preview:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#main-album-preview:hover > #main-photos-preview-image {
+  -webkit-filter: brightness(65%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-album-preview-image {
+  width: 50%;
+  -webkit-filter: brightness(100%);
+  transition: all 0.5s ease;
+}
+
+#main-album-preview-image-fix {
+  height: 99.95%
+}
+
+#main-album-preview-text {
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+  border-left: .1vw dashed #939393;
+}
+
+#main-album-preview-text-br {
+  height: 37.5%;
+}
+
+/*end-main-album-preview*/
+
+/*nikon-d3400-test-photos.html*/
+#nikon-d3400-test-photos-title-padding {
+  padding-left: 35.5vw;
+  padding-right: 35.5vw;
+}
+
+#flickr-href {
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+#flickr-href:hover {
+  color: #3385ff;
+  transition: all 0.5s ease;
+}
+
+#myBtn > img {
+  opacity: .25;
+  transition: all 0.2s ease;
+}
+
+#myBtn:hover > img {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+/*end-nikon-d3400-test-photos*/
+
+/*photos*/
+#album-0-preview {
+  font-family: "Advent Pro", serif;
+  display: inline-flex;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  border: .2vw solid #939393;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#album-0-preview:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#album-0-preview:hover > #album-0-preview-image {
+  -webkit-filter: brightness(65%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#album-0-preview-image {
+  width: 50%;
+  -webkit-filter: brightness(100%);
+  transition: all 0.5s ease;
+}
+
+#album-0-preview-text {
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+  border-right: .1vw dashed #939393;
+}
+
+#album-0-preview-text-br {
+  height: 37%;
+}
+
+#album-1-preview {
+  font-family: "Advent Pro", serif;
+  display: inline-flex;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  border: .2vw solid #939393;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#album-1-preview:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#album-1-preview:hover > #album-1-preview-image {
+  -webkit-filter: brightness(65%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#album-1-preview-image {
+  width: 50%;
+  -webkit-filter: brightness(100%);
+  transition: all 0.5s ease;
+}
+
+#album-1-preview-image-fix {
+  height: 99.95%
+}
+
+#album-1-preview-text {
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+  border-left: .1vw dashed #939393;
+}
+
+#album-1-preview-text-br {
+  height: 37%;
+}
+
+#horizontal-split {
+  width: 100%;
+  background-color: #939393;
+  height: .15vw;
+}
+
+#horizontal-split-padding {
+  padding-left: 30%;
+  padding-right: 30%;
+  height: 0;
+}
+
+#album-2-preview {
+  font-family: "Advent Pro", serif;
+  display: inline-flex;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  border: .2vw solid #939393;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#album-2-preview:hover {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  text-shadow: .15vw .15vw #000000;
+  background-color: rgb(25, 25, 25);
+}
+
+#album-2-preview:hover > #album-2-preview-image {
+  -webkit-filter: brightness(65%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#album-2-preview-image {
+  width: 50%;
+  -webkit-filter: brightness(100%);
+  transition: all 0.5s ease;
+}
+
+#album-2-preview-text {
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+  border-right: .1vw dashed #939393;
+}
+
+#album-2-preview-text-br {
+  height: 37%;
+}
+
+#main-br-padding {
+  height: 2vw;
+  width: 100%;
+}
+/*end-photos*/
