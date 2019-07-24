@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aaron Hare - Arboretum July, 2019</title>
+    <link rel="stylesheet" href="https://aaronhare.com/css/style.css">
+    <link rel="stylesheet" href="https://aaronhare.com/photos/css/arboretum-july-2019.css">
+    <link rel="stylesheet" type="text/css" href="https://aaronhare.com/photos/css/lightbox.min.css">
+    <script src="https://aaronhare.com/scripts/no-right-click.js"></script>
+    <script src="https://aaronhare.com/scripts/scroll-indicator.js"></script>
+    <script src="https://aaronhare.com/scripts/sidenav.js"></script>
+    <script src="https://aaronhare.com/photos/lightbox-plus-jquery.min.js"></script>
+    <link rel="icon" href="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png">
+  </head>
+  <body>
+    <div id="sidenavbackground" style="height:100%;width:100%;position:fixed;z-index:2;top:0;background-color:rgba(0,0,0,0.75);visibility:hidden;opacity:0;transition:all 0.4s ease;"></div>
+    <div id="sidenav" class="sidenav">
+      <a id="sidenav-close-btn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="sidenav-link-with-hover-1" href="https://aaronhare.com">Home</a>
+      <a id="sidenav-link-with-hover-2" href="https://aaronhare.com/about.html">About</a>
+      <a id="sidenav-link-with-hover-3" href="https://aaronhare.com/my-work.html">My Work</a>
+      <a id="sidenav-link-with-hover-4" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+      <a id="sidenav-link-with-hover-5" href="https://aaronhare.com/contact.html">Contact</a>
+      <div style="color:#868686;font-size:.9vw;margin-left:2vw;">Copyright © 2018-2019 Aaron Hare</div>
+    </div>
+    <div style="font-family:Raleway,serif;font-weight:500;transform:rotate(-90deg);color:#f9f9f9;position:fixed;z-index:1;font-size:1vw;mix-blend-mode:difference;top:50%;left:-1.45%;cursor:default;">⇽Scroll⇾</div>
+    <div id="header">
+      <div id="logo-header" style="display:inline-block;cursor:default;">
+        <img src="https://cdn.glitch.com/94ea5af5-9e8e-486c-b2a3-b66baf0421e4%2FGradient%20Logo.png" alt="Aaron Hare" style="width:4vw;display:inline-block;position:absolute;top:.55vw;left:1.25%;margin:.5vw;">
+        <div style="display:inline-block;color:#f9f9f9;font-family:Raleway;font-weight:400;font-size:1.5vw;margin:.4vw;margin-left:none;position:absolute;top:.45vw;left:6%;">
+          Aaron Hare's
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:7vw;height:.145vw;">
+          </div>
+          Portfolio
+        </div>
+      </div>
+      <div style="display:inline-block;margin-top:1vw;margin-right:.5vw;float:right;">
+        <a id="link-with-hover-1" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:58.5%;" href="https://aaronhare.com">Home</a>
+        <a id="link-with-hover-2" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:65.5%;" href="https://aaronhare.com/about.html">About</a>
+        <div id="header-dropdown">
+          <a id="link-with-hover-3" class="header-dropbtn" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;cursor:pointer;position:absolute;top:1.75vw;left:72.5%;" href="https://aaronhare.com/my-work.html">My Work <div id="down-arrow"></div></a>
+          <div id="header-dropdown-content">
+            <a href="https://aaronhare.com/photos.html">Photography</a>
+            <a href="https://aaronhare.com/videos.html">Videography</a>
+            <a href="https://aaronhare.com/graphic-design.html">Graphic Design</a>
+            <a href="https://aaronhare.com/3d-models.html">3D Modeling</a>
+            <a href="https://aaronhare.com/web-design.html">Web Design</a>
+            <a href="https://aaronhare.com/other-work.html">Other Work</a>
+          </div>
+        </div> 
+        <a id="link-with-hover-4" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:82.75%;" href="https://aaronharee-communicationsblog.blogspot.com/">Blog</a>
+        <a id="link-with-hover-5" style="color:#f9f9f9;text-decoration:none;font-family:Raleway;font-size:1.6vw;position:absolute;top:1.75vw;left:88.5%;" href="https://aaronhare.com/contact.html">Contact</a>
+        <span id="openNav" onclick="openNav()">
+          <div style="width:1.5vw;height:1.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;opacity:0;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.2vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:2.7vw;right:1.75%;"></div>
+          <div style="background-color:#f9f9f9;width:1.5vw;height:.15vw;display:inline-block;position:absolute;top:3.2vw;right:1.75%;"></div>
+        </span>
+      </div>
+      <div id="scroll-indicator-container">
+        <div class="scroll-indicator" id="scrollbar"></div>
+      </div> 
+    </div>
+    <div id="parallax-1">
+      <div id="parallax-1-text">
+        Arboretum July, 2019
+        <div style="padding-left:6.5vw;padding-right:6.5vw;">
+          <div style="background-color:#f9f9f9;border-radius:2vw;width:100%;height:.25vw;"></div>
+        </div>
+        <div id="parallax-1-body-text">
+            ADD A DESCRIPTION.
+        </div>
+      </div>
+      <div id="parallax-1-background-image"></div>
+    </div>
+    <div id="gallery">
+      <a href="https://live.staticflickr.com/65535/48360581332_0821b6b7ef_o.jpg" data-lightbox="gallery" data-title="DSC_0009"><img src="https://live.staticflickr.com/65535/48360581332_7a5bc5befa_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360441691_b24bf5c0c6_o.jpg" data-lightbox="gallery" data-title="DSC_0020"><img src="https://live.staticflickr.com/65535/48360441691_f9cf00b802_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360580557_aaa7eba996_o.jpg" data-lightbox="gallery" data-title="DSC_0028"><img src="https://live.staticflickr.com/65535/48360580557_7fb12a3f73_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360441186_49b6233e7d_o.jpg" data-lightbox="gallery" data-title="DSC_0047"><img src="https://live.staticflickr.com/65535/48360441186_0361e06004_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360580267_462571fd56_o.jpg" data-lightbox="gallery" data-title="DSC_0050"><img src="https://live.staticflickr.com/65535/48360580267_d57a5b5256_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360440511_1c563332a7_o.jpg" data-lightbox="gallery" data-title="DSC_0057"><img src="https://live.staticflickr.com/65535/48360440511_3c6537061e_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360579707_88c7b7f60a_o.jpg" data-lightbox="gallery" data-title="DSC_0069"><img src="https://live.staticflickr.com/65535/48360579707_b84260a091_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360439666_4571e1d7b3_o.jpg" data-lightbox="gallery" data-title="DSC_0073"><img src="https://live.staticflickr.com/65535/48360439666_1dc55b02ac_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360578762_20cea8fd8d_o.jpg" data-lightbox="gallery" data-title="DSC_0076"><img src="https://live.staticflickr.com/65535/48360578762_c44500a550_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360578322_d7f8b08b82_o.jpg" data-lightbox="gallery" data-title="DSC_0079"><img src="https://live.staticflickr.com/65535/48360578322_d67a3444a3_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360438666_16908f45c4_o.jpg" data-lightbox="gallery" data-title="DSC_0086"><img src="https://live.staticflickr.com/65535/48360438666_dea0571761_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360438536_1baa3637e8_o.jpg" data-lightbox="gallery" data-title="DSC_0094"><img src="https://live.staticflickr.com/65535/48360438536_e385a46b0e_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360438176_a0d6f98cc4_o.jpg" data-lightbox="gallery" data-title="DSC_0099"><img src="https://live.staticflickr.com/65535/48360438176_b414479777_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360437936_89c24ce9ec_o.jpg" data-lightbox="gallery" data-title="DSC_0103"><img src="https://live.staticflickr.com/65535/48360437936_f7c3524a0d_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360577282_7dfc67db26_o.jpg" data-lightbox="gallery" data-title="DSC_0115"><img src="https://live.staticflickr.com/65535/48360577282_93f5312f60_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360577167_fdf5a39b82_o.jpg" data-lightbox="gallery" data-title="DSC_0116"><img src="https://live.staticflickr.com/65535/48360577167_7f8387e13a_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360437181_b82ff09f1e_o.jpg" data-lightbox="gallery" data-title="DSC_0121"><img src="https://live.staticflickr.com/65535/48360437181_76ce3f6529_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+      <a href="https://live.staticflickr.com/65535/48360436516_a62feb72df_o.jpg" data-lightbox="gallery" data-title="DSC_0134"><img src="https://live.staticflickr.com/65535/48360436516_2487d2b498_z.jpg" style="object-fit:cover;width:15vw;height:10vw;"></a>
+          </div>
+    <div style="height:5.25vw;background-color:rgba(0,0,0,1);color:#f9f9f9;text-align:center;font-family:Raleway;font-weight:400;font-size:1.6vw;">
+      <div style="padding-top:1.65vw;">
+        Copyright © 2018-2019 Aaron Hare
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--Lightbox created by by Lokesh Dhakar. Homepage link: https://lokeshdhakar.com/ License:
+The MIT License (MIT)
+Copyright (c) 2015 Lokesh Dhakar
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
